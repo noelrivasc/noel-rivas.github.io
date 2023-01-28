@@ -3,8 +3,11 @@ Array.prototype.random = function () {
 }
 
 let prophet_teachings = [];
-prophet_teachings.push('"El ocio está en el corazón: si tus intenciones se ven manchadas por el side hustle, el dios del ocio te ha de juzgar; pero si tus intenciones son nomás pinches perder el tiempo de formas complicadas, verá tu haraganería con buenos ojos."');
-writeToScreen(randomPad(prophet_teachings[0], 1, 31));
+prophet_teachings.push('"El ocio está en el corazón: si tus intenciones se ven manchadas por el side hustle, el dios holgazán te ha de juzgar; pero si tus intenciones se limitan a perder el tiempo de formas complicadas, verá tu haraganería con buenos ojos."');
+prophet_teachings.push("Arduino de marfil - ruega por nosotros. OpenFrameworks coloridísimo - ruega por nosotros. Inmaculado JavaScript - ruega por nosotros. Nobilísimo Vim - ruega por nosotros. SSH de oro - ruega por nosotros. LED místico - ruega por nosotros. WebGL Salvador - ruega por nosotros.");
+
+const random_teaching_index = Math.floor(Math.random() * prophet_teachings.length);
+writeToScreen(randomPad(prophet_teachings[random_teaching_index], 1, 31));
 
 function writeToScreen(message) {
   const channels = {};

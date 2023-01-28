@@ -82,7 +82,7 @@ header .navigation {
 .hero .dynamic-text {
   max-width: 100rem;
   font-size: 2rem;
-  margin: auto;
+  margin: 2rem auto;
   font-family: Major Mono Display, Courier;
   overflow-wrap: break-word;
   position: relative;

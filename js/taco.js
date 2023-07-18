@@ -3,11 +3,11 @@ Array.prototype.random = function () {
 }
 
 let prophet_teachings = [];
-prophet_teachings.push('"El ocio está en el corazón: si tus intenciones se ven manchadas por el side hustle, el dios holgazán te ha de juzgar; pero si tus intenciones se limitan a perder el tiempo de formas complicadas, verá tu haraganería con buenos ojos."');
-prophet_teachings.push("Arduino de marfil - ruega por nosotros. OpenFrameworks coloridísimo - ruega por nosotros. Inmaculado JavaScript - ruega por nosotros. Vim de la Alianza - ruega por nosotros. SSH de oro - ruega por nosotros. LED místico - ruega por nosotros. WebGL Salvador - ruega por nosotros. Potenciómetro espiritual - ruega por nosotros. Breadboard de insigne devoción - ruega por nosotros. Neodimio de la mañana - ruega por nosotros.");
+prophet_teachings.push('El taller de cómputo ocioso es un área de juego para pasar el rato programando con otra gente ñoña que disfruta escribir código por gusto y por curiosidad.');
+// prophet_teachings.push("Arduino de marfil - ruega por nosotros. OpenFrameworks coloridísimo - ruega por nosotros. Inmaculado JavaScript - ruega por nosotros. Vim de la Alianza - ruega por nosotros. SSH de oro - ruega por nosotros. LED místico - ruega por nosotros. WebGL Salvador - ruega por nosotros. Potenciómetro espiritual - ruega por nosotros. Breadboard de insigne devoción - ruega por nosotros. Neodimio de la mañana - ruega por nosotros.");
 
 const random_teaching_index = Math.floor(Math.random() * prophet_teachings.length);
-writeToScreen(randomPad(prophet_teachings[random_teaching_index], 1, 31));
+writeToScreen(randomPad(prophet_teachings[random_teaching_index], 1, 20));
 
 function writeToScreen(message) {
   const channels = {};
